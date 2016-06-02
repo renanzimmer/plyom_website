@@ -1,0 +1,39 @@
+h2 {
+  font-size: 45px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+
+
+section {
+  height: 100vh;
+}
+
+// TODO MOVE TO STRUCTURE
+.wrapper {
+  min-width: 1200px;
+}
+
+section:first-of-type {
+  background-image: url(img/backg2.svg);
+  background-position: right top;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+  img {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 350px;
+    width: 600px;
+    margin-top: -50px;
+    // opacity: 1.5;
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: url(img/backg1.svg), url(img/backg2.svg);
+    background-position: left top, right top;
+  }
+}

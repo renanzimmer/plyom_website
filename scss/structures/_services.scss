@@ -1,0 +1,13 @@
+.services {
+  background-image: url(img/backg50.svg);
+  background-position: right top;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+
+  @media screen and (min-width: 1200px) {
+    background-image: url(img/backg40.svg), url(img/backg50.svg);
+    background-position: left top, right top;
+    background-size: auto 100vh, auto 50vh;
+  }
+}

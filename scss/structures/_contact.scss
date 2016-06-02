@@ -1,0 +1,30 @@
+.contact {
+  background-image: url(img/backg70.svg);
+  background-position: right top;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+  padding-top: 154px;
+  @media screen and (min-width: 1200px) {
+    background-image: url(img/backg70.svg), url(img/backg80.svg);
+    background-position: left bottom, right bottom;;
+    background-size: auto 70vh, auto 50vh;
+  }
+  dt {
+    background-repeat: no-repeat;
+    background-size: 20px auto;
+    background-position: left center;
+    padding-left: 25px;
+    display: block;
+    width: 200px;
+    &.phone {
+      background-image: url(img/Icone1Contato.png);
+    }
+    &.email {
+      background-image: url(img/Icone2Contato.png);
+    }
+    &.address {
+      background-image: url(img/Icone3Contato.png);
+    }
+  }
+}

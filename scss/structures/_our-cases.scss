@@ -1,0 +1,15 @@
+.our-cases {
+  background-image: url(img/backg3.svg);
+  background-position: left top;
+  background-repeat: no-repeat;
+  height: 100vh;
+  .cases-list {
+    padding-top: 200px;
+    li {
+      display: none;
+      &:first-of-type {
+        display: block;
+      }
+    }
+  }
+}

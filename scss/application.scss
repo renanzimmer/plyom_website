@@ -29,7 +29,7 @@
 
 // Component imports
 
-@import 'components/menu';
+@import 'components/menu-item';
 
 // -------------------------------------
 //   Structures
@@ -37,12 +37,17 @@
 
 // Structure imports
 
+@import 'structures/menu';
+@import 'structures/services';
+@import 'structures/methods';
+@import 'structures/our-cases';
+@import 'structures/contact';
+
 // -------------------------------------
 //   Vendor
 // -------------------------------------
 
 @import 'vendor/foundation-6.2.1-custom/css/foundation';
-// Third-party style imports, if needed
 
 // -------------------------------------
 //   Foundation - Tools
