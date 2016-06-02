@@ -1,0 +1,55 @@
+// *************************************
+//
+//   Project Name
+//   -> Manifest
+//
+// *************************************
+
+// -------------------------------------
+//   Foundation
+// -------------------------------------
+
+@import 'foundation/normalize';
+// @import 'foundation/helpers';
+// @import 'foundation/config';
+@import 'foundation/base';
+
+// -------------------------------------
+//   Google Fonts
+// -------------------------------------
+
+// Google Font imports
+
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:700);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+// -------------------------------------
+//   Components
+// -------------------------------------
+
+// Component imports
+
+@import 'components/menu';
+
+// -------------------------------------
+//   Structures
+// -------------------------------------
+
+// Structure imports
+
+// -------------------------------------
+//   Vendor
+// -------------------------------------
+
+@import 'vendor/foundation-6.2.1-custom/css/foundation';
+// Third-party style imports, if needed
+
+// -------------------------------------
+//   Foundation - Tools
+// -------------------------------------
+
+// @import 'foundation/tools';
+
+// -------------------------------------
+//   Inbox
+// -------------------------------------
