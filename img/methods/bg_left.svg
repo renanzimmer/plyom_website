@@ -1,54 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 259.3 765.9" style="enable-background:new 0 0 259.3 765.9;" xml:space="preserve">
+	 viewBox="0 0 142 765.9" style="enable-background:new 0 0 142 765.9;" xml:space="preserve">
 <style type="text/css">
-	.st0{opacity:0.2;fill:#00CEB0;enable-background:new    ;}
-	.st1{opacity:0.5;fill:#7CD8CA;enable-background:new    ;}
-	.st2{opacity:0.65;}
-	.st3{fill:none;stroke:#E6B4E6;stroke-miterlimit:10;}
-	.st4{fill:#DFCEE2;}
-	.st5{fill:#C9A9CC;}
-	.st6{fill:#701979;}
-	.st7{fill:#62156F;}
-	.st8{fill:#AD4EB1;}
+	.st0{fill:#C9A9CC;}
+	.st1{opacity:0.2;fill:#AD4EB1;}
+	.st2{fill:#AD4EB1;}
 </style>
-<polygon class="st0" points="0,23 36,23 52,23.3 32.7,50 0,50 "/>
-<polygon class="st1" points="132.9,0.7 92,54.1 92,0.6 "/>
-<g class="st2">
-	<g>
-		<line class="st3" x1="161.4" y1="565.2" x2="169" y2="557.4"/>
-		<line class="st3" x1="161.4" y1="580.9" x2="186" y2="557"/>
-		<line class="st3" x1="161.4" y1="588.7" x2="194" y2="557"/>
-		<line class="st3" x1="161.4" y1="596.5" x2="201.2" y2="557.6"/>
-		<line class="st3" x1="161.4" y1="604.3" x2="208.5" y2="557"/>
-		<line class="st3" x1="161.4" y1="612.1" x2="215.3" y2="557"/>
-		<line class="st3" x1="161.4" y1="619.9" x2="223.9" y2="557"/>
-		<line class="st3" x1="161.4" y1="627.7" x2="232.2" y2="557"/>
-		<line class="st3" x1="161.4" y1="573" x2="177.7" y2="557"/>
-		<line class="st3" x1="232.2" y1="619.7" x2="224.6" y2="627.5"/>
-		<line class="st3" x1="232.9" y1="604" x2="208.3" y2="627.9"/>
-		<line class="st3" x1="232.2" y1="596.2" x2="199.5" y2="627.9"/>
-		<line class="st3" x1="232.2" y1="588.4" x2="192.3" y2="627.3"/>
-		<line class="st3" x1="232.2" y1="580.6" x2="185" y2="627.9"/>
-		<line class="st3" x1="232.2" y1="572.8" x2="178.3" y2="627.9"/>
-		<line class="st3" x1="232.2" y1="565" x2="169.7" y2="627.9"/>
-		<line class="st3" x1="232.9" y1="611.8" x2="216.6" y2="627.9"/>
-	</g>
-	<g>
-		<polyline class="st4" points="0,544.9 69,544.4 69,574.6 1,644 		"/>
-		<polygon class="st5" points="12,594 12,662 33,662 81,613.6 81,594 		"/>
-	</g>
-	<polygon class="st4" points="119,668.8 139.5,647 237,647 259.3,668.8 189.1,737.3 	"/>
-	<polygon class="st5" points="89,686 111,686 160,733.6 160,752 89,752 	"/>
-	<polyline class="st4" points="0,426 18,426 39,446.3 -0.2,486.1 	"/>
-	<polygon class="st6" points="68,258.4 119.9,310.1 68,362.1 52,347.1 52,274.6 	"/>
-	<polygon class="st7" points="0,204 59,204 23,241 0,241 	"/>
-	<polygon class="st8" points="26,88.4 -0.1,113.7 0,156.6 26,182.6 	"/>
-	<polyline class="st8" points="0,285.6 26,311 0.6,311 	"/>
-	<polygon class="st5" points="68,461 47,461 0,507.1 0,529 68,529 	"/>
-	<polygon class="st6" points="89.1,478.6 39,532.6 89.1,584.6 106,569.1 106,494.6 	"/>
-	<polygon class="st5" points="134,372 76,372 76,392.6 125.5,443 147,443 147,372 	"/>
-	<polygon class="st8" points="0,708.9 27,735.8 27,765.9 0.4,765.9 	"/>
-</g>
+<polygon class="st0" points="73,87.9 73,18.9 95,18.9 142,66.1 142,87.9 "/>
+<polygon class="st1" points="54.2,53.3 0.7,107.9 0,196.9 54,142.4 "/>
+<polygon class="st2" points="0.8,-0.1 28,0 28,9.6 0.4,49.2 "/>
 </svg>

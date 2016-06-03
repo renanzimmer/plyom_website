@@ -1,13 +1,64 @@
+$dark-pink: #701979;
 .services {
-  background-image: url(img/backg50.svg);
+  background-image: url(img/services/bg_right.svg);
   background-position: right top;
   background-repeat: no-repeat;
   height: 100vh;
   position: relative;
 
   @media screen and (min-width: 1200px) {
-    background-image: url(img/backg40.svg), url(img/backg50.svg);
+    background-image: url(img/services/bg_left.svg), url(img/services/bg_right.svg);
     background-position: left top, right top;
-    background-size: auto 100vh, auto 50vh;
+    background-size: auto 100vh, auto 100vh;
+  }
+
+  aside {
+    color: $dark-pink;
+    font-family: 'Source Sans Pro', sans-serif !important;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  img {
+    height: 10vh;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    padding-left: 14%;
+    &:before{
+      content: "";
+      display: block;
+      width: 1px;
+      height: 300px;
+      background-color: $dark-pink;
+      position: absolute;
+      top: 10%;
+    }
+    &:before {
+      left: 57%;
+    }
+    li {
+      display: block;
+      float: left;
+      width: 50%;
+      padding: 0px 21px;
+      text-align: center;
+      &:first-of-type {
+        padding-left: 0;
+        padding-right: 63px;
+      }
+      &:last-of-type {
+        padding-left: 63px;
+        padding-right: 0;
+      }
+      h3 {
+        font-family: 'Source Sans Pro', sans-serif !important;
+        font-size: 27px;
+        font-weight: 700 !important;
+        color: $dark-pink;
+      }
+    }
   }
 }

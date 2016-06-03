@@ -1,14 +1,28 @@
+$turquesa: #009999;
 .our-cases {
-  background-image: url(img/backg3.svg);
+  background-image: url(img/our_cases/bg.svg);
   background-position: left top;
   background-repeat: no-repeat;
   height: 100vh;
   .cases-list {
-    padding-top: 200px;
+    aside {
+      color: $turquesa;
+      text-transform: uppercase;
+      font-size: 23px;
+      font-weight: 700;
+    }
     li {
       display: none;
       &:first-of-type {
         display: block;
+      }
+    }
+    .skills {
+      li {
+        display: inline;
+        img {
+          height: 40px;        
+        }
       }
     }
   }

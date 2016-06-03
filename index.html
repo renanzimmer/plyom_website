@@ -12,6 +12,7 @@
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="stylesheet" href="application.css">
   <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300' rel='stylesheet' type='text/css'>
 </head>
 <body>
   <!--[if lt IE 8]>
@@ -19,7 +20,7 @@
   <![endif]-->
   <div class="wrapper">
     <header class="top-navigation">
-      <img src="img/logomenu.svg" alt="Logo Plyom"/>
+      <img src="img/header/logo.svg" alt="Logo Plyom"/>
       <div class="row">
         <div class="small-12 columns">
           <nav>
@@ -34,8 +35,8 @@
       </div>
     </header>
 
-    <section>
-      <img src="img/Marca.svg" alt="" />
+    <section class="no-head">
+      <img src="img/first_section/plyom_full_art_logo.svg" alt="" />
     </section>
 
     <section class="our-cases">
@@ -48,7 +49,7 @@
                   <h2>Nossos Cases</h2>
                   <h3>Alguns dos nossos projetos</h3>
                 </header>
-                <h2>Anestech</h2>
+                <aside>Anestech</aside>
                 <p>
                   A Anestech, responsável pelos APPs para anestesiologistas, possui quatro
                   aplicativos disponíveis para iOs: AxCalc (calculadora para diversos procedimentos
@@ -56,14 +57,16 @@
                   anestesia venosa total alvo controlada); e o AxReg, apenas disponível para
                   tablet iOs (que faz o registro completo do procedimento anestésico).
                 </p>
-                <h3>Skills</h3>
-                <ul>
-                  <li>Desktop</li>
+                <h3><b>Skills</b></h3>
+                <ul class="skills">
+                  <li>
+                    <img src="img/our_cases/icon_mobile.svg" alt=""/>
+                  </li>
                   <li>Apple</li>
                 </ul>
               </div>
               <div class="small-7 columns">
-                <img src="" alt=""/>
+                <img src="img/our_cases/anestech.png" alt=""/>
               </div>
             </div>
           </article>
@@ -76,7 +79,7 @@
                   <h2>Nossos Cases</h2>
                   <h3>Alguns dos nossos projetos</h3>
                 </header>
-                <h2>Anestech</h2>
+                <h2>ASDASDADSAD</h2>
                 <p>
                   A Anestech, responsável pelos APPs para anestesiologistas, possui quatro
                   aplicativos disponíveis para iOs: AxCalc (calculadora para diversos procedimentos
@@ -102,40 +105,29 @@
     <section class= "services">
         <div class="row">
           <header>
-            <h2>Quem Somos</h2>
-            <h3>Somos uma Fábrica de softwares.</h3>
-            <aside>E o que fazemos?</aside>
+            <h2>Quem Somos?</h2>
+            <h3>Somos uma equipe multidisciplinar experiente de designers e desenvolvedores focados em soluções digitais. Nossas soluções são completas: primam pela segurança, performance e pela interface intuitiva; com as mais avançadas tecnologias e com os melhores métodos de desenvolvimento de software, transformamos sua ideia em uma solução corporativa.</h3>
+            <aside>E o que faz cada equipe?</aside>
           </header>
           <ul>
             <li>
               <article class="">
-                <img src="" alt=""/>
+                <img src="img/services/icon_services_developers.png" alt=""/>
                 <h3>Software Engineering</h3>
                 <p>
-                  Possuimos desenvolvedores altamente
-                  capacitados para melhorar
-                  continuamente suas habilidades ao se
-                  perguntarem se há uma maneira
-                  melhor de construir alguma coisa. A
-                  força motor dessa equipe é encontrar
-                  novas formas de entregar valor de
-                  negócio para nossos clientes.
+                  O time de desenvolvimento dá vida às aplicações.
+                  Os frequentes desafios tecnológicos e a obsessão pela criação de softwares
+                  de qualidade são os motores dessa equipe polivalente e versátil.
                 </p>
               </article>
             </li>
             <li>
               <article class="">
-                <img src="" alt=""/>
+                <img src="img/services/icon_services_designers.png" alt=""/>
                 <h3>UX/UI Design</h3>
                 <p>
-                  Uma vez que tenha se usado o UX
-                  design, se pode focar nos
-                  renamentos visuais da interface de
-                  usuário (UI). Isto é, onde os
-                  essenciais detalhes cognitivos criam
-                  o carácter duradouro da experiência
-                  de uma plataforma, como de um
-                  dispositivo, software ou aplicativo.
+                  A equipe de design planeja e concebe o layout das aplicações digitais dos nossos clientes.
+                  São as incríveis experiências proporcionadas aos usuários que movem esse time.
                 </p>
               </article>
             </li>
@@ -146,16 +138,24 @@
 
     <section class= "methods">
       <div class="row">
-        <h2>Como podemos atendê-lo?</h2>
-        <h3>Escolha o processo que mais se encaixa pra você:</h3>
+        <div class="small-11 columns">
+          <h2>Como podemos atendê-lo?</h2>
+          <h3>Escolha o processo que mais se encaixa pra você:</h3>
+        </div>
         <ul>
           <li>
-            <article class="">
-              <img src="" alt="" />
-              <h2>Recurso</h2>
-              <aside class="">
-                Versatilidade
-              </aside>
+            <article class="process">
+              <div class="row">
+                <div class="small-4 columns">
+                  <img src="img/methods/icon_methods_resources.png" alt="" />
+                </div>
+                <div class="small-8 columns">
+                  <h2>Recurso</h2>
+                  <aside class="">
+                    Versatilidade
+                  </aside>
+                </div>
+              </div>
               <p>
                 Escolha prossionais capacitados em
                 diferentes áreas técnicas para
@@ -167,12 +167,18 @@
             </article>
           </li>
           <li>
-            <article class="">
-              <img src="" alt="" />
-              <h2>Sprint</h2>
-              <aside class="">
-                Flexibilidade
-              </aside>
+            <article class="process">
+              <div class="row">
+                <div class="small-4 columns">
+                  <img src="img/methods/icon_methods_sprint.png" alt="" />
+                </div>
+                <div class="small-8 columns">
+                  <h2>Sprint</h2>
+                  <aside class="">
+                    Flexibilidade
+                  </aside>
+                </div>
+              </div>
               <p>
                 Trabalhando com o apoio da
                 metodologia scrum, desenvolvemos seu
@@ -184,12 +190,18 @@
             </article>
           </li>
           <li>
-            <article class="">
-              <img src="" alt="" />
-              <h2>Escopo</h2>
-              <aside class="">
-                Previsibilidade
-              </aside>
+            <article class="process">
+              <div class="row">
+                <div class="small-4 columns">
+                  <img src="img/methods/icon_methods_scope.png" alt="" />
+                </div>
+                <div class="small-8 columns">
+                  <h2>Escopo</h2>
+                  <aside class="">
+                    Previsibilidade
+                  </aside>
+                </div>
+              </div>
               <p>
                 Juntos, elaboramos um pré-projeto -
                 documento que apresentará todos os
@@ -206,22 +218,25 @@
     <section class="contact">
       <div class="row">
         <header>
-          <h2>Vamos conversar?</h2>
-          <h3>
-            A Plyom quer ter você sempre por perto.
-            Por isso, listamos aqui nossos contatos para que
-            você fale conosco quando precisar
-          </h3>
+          <div class="row">
+            <div class="small-11 columns small-offset-1">
+              <h2>Vamos conversar?</h2>
+              <h3>A Plyom quer ter você sempre por perto. Por isso, listamos aqui nossos contatos para que você fale conosco quando precisar</h3>
+            </div>
+          </div>
         </header>
         <dl>
-          <dt class="phone">Telefone</dt>
-          <dd>(48) 3028 2360</dd>
-          <dt class="email">E-mail</dt>
-          <dd>atendimento@plyom.com.br</dd>
-          <dt class="address">Endereço</dt>
-          <dd>SC-401, Km 4, Sala 10 | Centro de Inovação ACATE
-            Saco Grande - Florianópolis (SC) | CEP 88032-005
-          </dd>
+          <div class="row">
+            <div class="small-9 columns small-offset-3">
+              <dt class="phone">Telefone</dt>
+              <dd>(48) 3028 2360</dd>
+              <dt class="email">E-mail</dt>
+              <dd>atendimento@plyom.com.br</dd>
+              <dt class="address">Endereço</dt>
+              <dd>SC-401, Km 4, Sala 10 | Centro de Inovação ACATE Saco Grande - Florianópolis (SC) | CEP 88032-005
+              </dd>
+            </div>
+          </div>
         </dl>
       </div>
     </section>

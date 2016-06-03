@@ -1,8 +1,38 @@
+$nice-blue: #0071bc;
 .methods {
-  background-image: url(img/backg60.svg);
+  display: block;
+  text-align: left;
+  background-image: url(img/methods/bg_right.svg);
   background-position: right top;
   background-repeat: no-repeat;
   height: 100vh;
+
+  @media screen and (min-width: 1200px) {
+    background-image: url(img/methods/bg_left.svg), url(img/methods/bg_right.svg);
+    background-position: left top, right top;
+    background-size: auto 100vh, auto 100vh;
+  }
+
+  .process {
+    display: block;
+    h2 {
+      color: $nice-blue;
+      font-size: 44px;
+      -webkit-margin-before: 0.13em;
+      -webkit-margin-after: 0em;
+      -webkit-margin-start: 0px;
+      -webkit-margin-end: 0px;
+      text-align: right;
+    }
+    aside {
+      text-align: right;
+      text-transform: uppercase;
+    }
+    img {
+      text-align: right;;
+    }
+  }
+
   ul {
     margin: 0;
     padding: 0;
@@ -12,7 +42,7 @@
       display: block;
       width: 1px;
       height: 300px;
-      background-color: black;
+      background-color: $nice-blue;
       position: absolute;
       top: 10%;
     }
