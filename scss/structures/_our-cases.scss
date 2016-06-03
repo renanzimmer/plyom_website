@@ -4,6 +4,9 @@ $turquesa: #009999;
   background-position: left top;
   background-repeat: no-repeat;
   height: 100vh;
+  h2 {
+    -webkit-margin-before: 0 !important;
+  }
   .cases-list {
     aside {
       color: $turquesa;
@@ -11,7 +14,7 @@ $turquesa: #009999;
       font-size: 23px;
       font-weight: 700;
     }
-    li {
+    li.case {
       display: none;
       &:first-of-type {
         display: block;
@@ -21,7 +24,7 @@ $turquesa: #009999;
       li {
         display: inline;
         img {
-          height: 40px;        
+          height: 40px;
         }
       }
     }

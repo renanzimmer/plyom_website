@@ -540,14 +540,16 @@ ul.menu li a {
   background-position: left top;
   background-repeat: no-repeat;
   height: 100vh; }
+  .our-cases h2 {
+    -webkit-margin-before: 0 !important; }
   .our-cases .cases-list aside {
     color: #009999;
     text-transform: uppercase;
     font-size: 23px;
     font-weight: 700; }
-  .our-cases .cases-list li {
+  .our-cases .cases-list li.case {
     display: none; }
-    .our-cases .cases-list li:first-of-type {
+    .our-cases .cases-list li.case:first-of-type {
       display: block; }
   .our-cases .cases-list .skills li {
     display: inline; }
