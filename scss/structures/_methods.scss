@@ -4,13 +4,13 @@ $nice-blue: #0071bc;
   text-align: left;
   background-image: url(img/methods/bg_right.svg);
   background-position: right top;
+  background-size: auto 80vh;
   background-repeat: no-repeat;
-  height: 100vh;
 
   @media screen and (min-width: 1200px) {
     background-image: url(img/methods/bg_left.svg), url(img/methods/bg_right.svg);
     background-position: left top, right top;
-    background-size: auto 100vh, auto 100vh;
+    background-size: auto 80vh, auto 100vh;
   }
 
   .process {
@@ -45,6 +45,7 @@ $nice-blue: #0071bc;
       background-color: $nice-blue;
       position: absolute;
       top: 10%;
+      height: 25vh;
     }
     &:before {
       left: 32%;

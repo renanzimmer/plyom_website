@@ -5,39 +5,46 @@ $cinza-claro: #ccc;
 $cinza-intermediario: #b3b3b3;
 .our-cases {
   background-image: url(img/our_cases/bg.svg);
+  background-size: auto 90vh;
+  height: 90vh;
   background-position: left top;
   background-repeat: no-repeat;
-  height: 100vh;
+  p {
+    font-family: "Myriad Pro";
+  }
   ul {
     display: block;
-    text-align: center;
-    .pagination {
-      display: inline-block;
-      padding: 0;
-      margin: 0;
-      li {
-        display: inline;
-        a {
-          color: $cinza-intermediario;
-          font-size: 14px;
-          font-weight: bold;
-          float: left;
-          padding: 8px 16px;
-          text-decoration: none;
-          transition: background-color .5s;
-          border-radius: 50%;
-          border: 2px solid $cinza-claro;
-          margin: 0 4px;
-          &.active {
+    text-align: left;
+    &.centered-list {
+      text-align: center;
+      .pagination {
+        z-index: 20;
+        padding: 0;
+        margin: 0;
+        li {
+          display: inline-block;
+          a {
+            color: $cinza-intermediario;
+            font-size: 14px;
+            font-weight: bold;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+            transition: background-color .5s;
+            border-radius: 50%;
+            border: 2px solid $cinza-claro;
+            margin: 0 4px;
+            &.active {
               background-color: $turquesa-claro;
               color: white;
               border: 2px solid $turquesa-claro;
-          }
-          &:hover:not(.active) {
-            transition: color .5s, border .5s;
-            background-color: white;
-            color: $turquesa-intermediario;
-            border: 2px solid $turquesa-claro;
+            }
+            &:hover:not(.active) {
+              transition: color .5s, border .5s;
+              background-color: white;
+              color: $turquesa-intermediario;
+              border: 2px solid $turquesa-claro;
+            }
           }
         }
       }
@@ -51,6 +58,21 @@ $cinza-intermediario: #b3b3b3;
     height: 60vh;
     list-style-type: none;
     margin-bottom: 10vh;
+    .case-image {
+      position:relative;
+      display:inline-block;
+      overflow:hidden;
+      img {
+        position:absolute;
+        top:50%;
+        min-height:100%;
+        display:block;
+        left:50%;
+        -webkit-transform: translate(-50%, -50%);
+        width:100%;
+      }
+    }
+
     aside {
       color: $turquesa;
       text-transform: uppercase;

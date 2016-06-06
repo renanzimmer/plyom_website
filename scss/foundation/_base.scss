@@ -1,5 +1,10 @@
 $medium-gray: #585857;
 
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url('fonts/MyriadPro-Regular.otf');
+}
+
 h2 {
   font-size: 45px !important;
   font-weight: 700 !important;
@@ -16,8 +21,8 @@ body {
 }
 
 section {
-  padding-top: 20vh;
-  height: 90vh;
+  padding-top: 10vh;
+  height: 80vh;
 }
 
 // TODO MOVE TO STRUCTURE

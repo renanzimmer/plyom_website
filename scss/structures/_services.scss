@@ -3,13 +3,12 @@ $dark-pink: #701979;
   background-image: url(img/services/bg_right.svg);
   background-position: right top;
   background-repeat: no-repeat;
-  height: 100vh;
   position: relative;
 
   @media screen and (min-width: 1200px) {
     background-image: url(img/services/bg_left.svg), url(img/services/bg_right.svg);
     background-position: left top, right top;
-    background-size: auto 100vh, auto 100vh;
+    background-size: auto 80vh, auto 100vh;
   }
 
   aside {
@@ -35,6 +34,7 @@ $dark-pink: #701979;
       background-color: $dark-pink;
       position: absolute;
       top: 10%;
+      height: 25vh;
     }
     &:before {
       left: 57%;

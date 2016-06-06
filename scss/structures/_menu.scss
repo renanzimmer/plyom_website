@@ -1,4 +1,12 @@
 $nav-height: 76px;
+$turquesa: #009999;
+$turquesa-intermediario: #1cb1b5;
+$turquesa-claro: #66cccc;
+$cinza-claro: #ccc;
+$cinza-intermediario: #b3b3b3;
+$lilas: #993399;
+$azul: #0066cc;
+$verde: #669900;
 .top-navigation {
   position: fixed;
   width: 100%;
@@ -21,6 +29,23 @@ $nav-height: 76px;
       display: inline-block;
       line-height: $nav-height;
       margin-left: 40px;
+      a {
+        &.active {
+          font-weight: bold;
+          &.our-cases-nav {
+            color: $turquesa-claro;
+          }
+          &.services-nav {
+            color: $lilas;
+          }
+          &.methods-nav {
+            color: $azul;
+          }
+          &.contact-nav {
+            color: $verde;
+          }
+        }
+      }
     }
   }
 }
