@@ -1,13 +1,56 @@
 $turquesa: #009999;
+$turquesa-intermediario: #1cb1b5;
+$turquesa-claro: #66cccc;
+$cinza-claro: #ccc;
+$cinza-intermediario: #b3b3b3;
 .our-cases {
   background-image: url(img/our_cases/bg.svg);
   background-position: left top;
   background-repeat: no-repeat;
   height: 100vh;
+  ul {
+    display: block;
+    text-align: center;
+    .pagination {
+      display: inline-block;
+      padding: 0;
+      margin: 0;
+      li {
+        display: inline;
+        a {
+          color: $cinza-intermediario;
+          font-size: 14px;
+          font-weight: bold;
+          float: left;
+          padding: 8px 16px;
+          text-decoration: none;
+          transition: background-color .5s;
+          border-radius: 50%;
+          border: 2px solid $cinza-claro;
+          margin: 0 4px;
+          &.active {
+              background-color: $turquesa-claro;
+              color: white;
+              border: 2px solid $turquesa-claro;
+          }
+          &:hover:not(.active) {
+            transition: color .5s, border .5s;
+            background-color: white;
+            color: $turquesa-intermediario;
+            border: 2px solid $turquesa-claro;
+          }
+        }
+      }
+    }
+  }
+
   h2 {
     -webkit-margin-before: 0 !important;
   }
   .cases-list {
+    height: 60vh;
+    list-style-type: none;
+    margin-bottom: 10vh;
     aside {
       color: $turquesa;
       text-transform: uppercase;
