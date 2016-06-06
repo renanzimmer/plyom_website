@@ -594,18 +594,6 @@ ul.menu li a {
     height: 60vh;
     list-style-type: none;
     margin-bottom: 10vh; }
-    .our-cases .cases-list .case-image {
-      position: relative;
-      display: inline-block;
-      overflow: hidden; }
-      .our-cases .cases-list .case-image img {
-        position: absolute;
-        top: 50%;
-        min-height: 100%;
-        display: block;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        width: 100%; }
     .our-cases .cases-list aside {
       color: #009999;
       text-transform: uppercase;

@@ -58,21 +58,6 @@ $cinza-intermediario: #b3b3b3;
     height: 60vh;
     list-style-type: none;
     margin-bottom: 10vh;
-    .case-image {
-      position:relative;
-      display:inline-block;
-      overflow:hidden;
-      img {
-        position:absolute;
-        top:50%;
-        min-height:100%;
-        display:block;
-        left:50%;
-        -webkit-transform: translate(-50%, -50%);
-        width:100%;
-      }
-    }
-
     aside {
       color: $turquesa;
       text-transform: uppercase;
