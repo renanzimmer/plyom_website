@@ -15,22 +15,23 @@ function changeNavFromScrollPosition(scroll, windowHeight) {
   } else {
     $(".top-navigation").hide();
   }
-  if (scroll >= windowHeight) {
+  if (scroll >= ($(".our-cases").offset().top)-77) {
     $(".menu").find(".active").removeClass("active");
     $(".our-cases-nav").addClass("active");
   }
-  if (scroll >= (windowHeight + windowHeight*0.8)) {
+  if (scroll >= ($(".services").offset().top)-77) {
     $(".menu").find(".active").removeClass("active");
     $(".services-nav").addClass("active");
   }
-  if (scroll >= (windowHeight + 2*(windowHeight*0.8))) {
+  if (scroll >= ($(".methods").offset().top)-77) {
     $(".menu").find(".active").removeClass("active");
     $(".methods-nav").addClass("active");
   }
-  if (scroll >= (windowHeight + 3*(windowHeight*0.7))) {
+  if (scroll >= ($(".contact").offset().top)-200) {
     $(".menu").find(".active").removeClass("active");
     $(".contact-nav").addClass("active");
   }
+  console.log("SCROLL: " + scroll + "CONTACT: " + $(".our-cases").offset().top);
 }
 
 $(".nav-item").on("click", function(e) {
@@ -50,23 +51,25 @@ function changeCase(selector) {
 }
 
 function scrollPage(distanceFromTop){
-  $(window).scrollTop(distanceFromTop);
+  $('html, body').animate({
+       scrollTop: distanceFromTop
+   }, 500);
 }
 $(".nav-menu-item").on("click", function(e) {
   e.preventDefault();
   var itemClass = $(this).attr("class").split(" ")[0];
   var windowHeight = $(window).height();
   if (itemClass == "our-cases-nav") {
-    scrollPage(windowHeight);
+    scrollPage( $(".our-cases").offset().top);
   }
   if (itemClass == "services-nav") {
-    scrollPage(windowHeight + windowHeight*0.8);
+    scrollPage( $(".services").offset().top);
   }
   if (itemClass == "methods-nav") {
-    scrollPage(windowHeight + 2*(windowHeight*0.8));
+    scrollPage( $(".methods").offset().top);
   }
   if (itemClass == "contact-nav") {
-    scrollPage(windowHeight + 3*(windowHeight*0.8));
+    scrollPage( $(".contact").offset().top);
   }
   $(this).closest(".menu").find(".active").removeClass("active");
   $(this).addClass("active");

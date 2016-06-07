@@ -491,6 +491,8 @@ ul.menu li a {
         font-size: 27px;
         font-weight: 700 !important;
         color: #701979; }
+      .services ul li p {
+        text-align: left; }
 
 .methods {
   display: block;
@@ -541,7 +543,7 @@ ul.menu li a {
       float: left;
       width: 33%;
       padding: 0px 21px;
-      text-align: center; }
+      text-align: left; }
       .methods ul li:first-of-type {
         padding-left: 0;
         padding-right: 63px; }
@@ -603,17 +605,26 @@ ul.menu li a {
       display: none; }
       .our-cases .cases-list li.case:first-of-type {
         display: block; }
-    .our-cases .cases-list .skills li {
-      display: inline; }
-      .our-cases .cases-list .skills li img {
-        height: 40px; }
+    .our-cases .cases-list .skills {
+      padding-left: 0px; }
+      .our-cases .cases-list .skills li {
+        display: inline; }
+        .our-cases .cases-list .skills li img {
+          height: 40px; }
 
 .contact {
   background-image: url(img/contact/bg_right.svg);
   background-position: right top;
   background-repeat: no-repeat;
   position: relative;
-  padding-top: 15vh; }
+  padding-top: 5vh;
+  padding-left: 10%; }
+  .contact header {
+    width: 100%; }
+  .contact p {
+    margin-top: 0px;
+    font-size: 22px !important;
+    font-weight: 400 !important; }
   @media screen and (min-width: 1200px) {
     .contact {
       background-image: url(img/contact/bg_left.svg), url(img/contact/bg_right.svg);
@@ -623,25 +634,42 @@ ul.menu li a {
     margin-bottom: 0px; }
   .contact h3 {
     margin-top: 0px; }
-  .contact dd {
-    font-size: 26px;
-    width: 100%; }
-  .contact dt {
-    background-repeat: no-repeat;
-    background-size: 20px auto;
-    background-position: left center;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 26px;
-    padding-left: 25px;
-    display: block;
-    width: 200px; }
-    .contact dt.phone {
-      background-image: url(img/contact/icon_contact_phone.png); }
-    .contact dt.email {
-      background-image: url(img/contact/icon_contact_email.png); }
-    .contact dt.address {
-      background-image: url(img/contact/icon_contact_address.png); }
+  .contact dl {
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+    margin: 0; }
+    .contact dl dd {
+      font-size: 26px;
+      float: left;
+      padding: 0;
+      margin: 0; }
+      .contact dl dd.address-description {
+        width: 100% !important; }
+      .contact dl dd.phone-description {
+        width: 79% !important; }
+      .contact dl dd.email-description {
+        width: 84% !important; }
+    .contact dl dt {
+      background-repeat: no-repeat;
+      background-size: 20px auto;
+      background-position: left center;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 26px;
+      padding-left: 25px;
+      display: block;
+      float: left;
+      margin: 0; }
+      .contact dl dt.phone {
+        width: 21%;
+        background-image: url(img/contact/icon_contact_phone.png); }
+      .contact dl dt.email {
+        width: 16%;
+        background-image: url(img/contact/icon_contact_email.png); }
+      .contact dl dt.address {
+        width: 15%;
+        background-image: url(img/contact/icon_contact_address.png); }
 
 /**
  * Foundation for Sites by ZURB

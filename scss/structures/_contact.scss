@@ -3,7 +3,16 @@
   background-position: right top;
   background-repeat: no-repeat;
   position: relative;
-  padding-top: 15vh;
+  padding-top: 5vh;
+  padding-left: 10%;
+  header {
+    width: 100%;
+  }
+  p {
+    margin-top: 0px;
+    font-size: 22px !important;
+    font-weight: 400 !important;
+  }
   @media screen and (min-width: 1200px) {
     background-image: url(img/contact/bg_left.svg), url(img/contact/bg_right.svg);
     background-position: left bottom, right bottom;;
@@ -15,28 +24,50 @@
   h3 {
     margin-top: 0px;
   }
-  dd {
-    font-size: 26px;
+  dl {
     width: 100%;
-  }
-  dt {
-    background-repeat: no-repeat;
-    background-size: 20px auto;
-    background-position: left center;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 26px;
-    padding-left: 25px;
-    display: block;
-    width: 200px;
-    &.phone {
-      background-image: url(img/contact/icon_contact_phone.png);
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    dd {
+      font-size: 26px;
+      float: left;
+      padding: 0;
+      margin: 0;
+      &.address-description {
+        width: 100% !important;
+      }
+      &.phone-description {
+        width: 79% !important;
+      }
+      &.email-description {
+        width: 84% !important;
+      }
     }
-    &.email {
-      background-image: url(img/contact/icon_contact_email.png);
-    }
-    &.address {
-      background-image: url(img/contact/icon_contact_address.png);
+    dt {
+      background-repeat: no-repeat;
+      background-size: 20px auto;
+      background-position: left center;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 26px;
+      padding-left: 25px;
+      display: block;
+      float: left;
+      margin: 0;
+
+      &.phone {
+        width: 21%;
+        background-image: url(img/contact/icon_contact_phone.png);
+      }
+      &.email {
+        width: 16%;
+        background-image: url(img/contact/icon_contact_email.png);
+      }
+      &.address {
+        width: 15%;
+        background-image: url(img/contact/icon_contact_address.png);
+      }
     }
   }
 }
