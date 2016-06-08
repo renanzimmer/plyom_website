@@ -15,23 +15,19 @@ function changeNavFromScrollPosition(scroll, windowHeight) {
   } else {
     $(".top-navigation").hide();
   }
-  if (scroll >= ($(".our-cases").offset().top)-77) {
-    $(".menu").find(".active").removeClass("active");
-    $(".our-cases-nav").addClass("active");
-  }
-  if (scroll >= ($(".services").offset().top)-77) {
-    $(".menu").find(".active").removeClass("active");
-    $(".services-nav").addClass("active");
-  }
-  if (scroll >= ($(".methods").offset().top)-77) {
-    $(".menu").find(".active").removeClass("active");
-    $(".methods-nav").addClass("active");
-  }
-  if (scroll >= ($(".contact").offset().top)-200) {
-    $(".menu").find(".active").removeClass("active");
-    $(".contact-nav").addClass("active");
-  }
-  console.log("SCROLL: " + scroll + "CONTACT: " + $(".our-cases").offset().top);
+  var sectionClass = "";
+  if (scroll < ($(".services").offset().top)-77) {
+    sectionClass = ".our-cases-nav";
+  } else
+  if (scroll < ($(".methods").offset().top)-77) {
+    sectionClass = ".services-nav";
+  } else
+  if (scroll < ($(".contact").offset().top)-200) {
+    sectionClass = ".methods-nav";
+  } else
+    sectionClass = ".contact-nav";
+  $(".menu").find(".active").removeClass("active");
+  $(sectionClass).addClass("active");
 }
 
 $(".nav-item").on("click", function(e) {
