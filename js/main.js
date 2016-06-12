@@ -71,3 +71,8 @@ $(".nav-menu-item").on("click", function(e) {
   $(this).addClass("active");
 
 });
+
+$(".process-detail-button").on("click", function(e){
+  $(".sprint-detail").show();
+  console.log("TEST");
+});

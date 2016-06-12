@@ -863,6 +863,9 @@ ul.menu li a {
     position: fixed;
     right: 1%;
     top: 74px; }
+  .processes .sprint-detail {
+    display: none;
+    transition: visibility 0s, opacity 0.5s linear; }
   .processes aside {
     text-transform: uppercase;
     font-size: 32px;
@@ -873,6 +876,15 @@ ul.menu li a {
     font-size: 16px; }
   .processes .process-container {
     padding-left: 8%; }
+    .processes .process-container .process-detail-button {
+      padding: 9px;
+      background-color: #0066cc;
+      height: 2vh;
+      line-height: 5;
+      text-decoration: none;
+      font-weight: bold;
+      color: white;
+      margin-left: 32%; }
     .processes .process-container ul li {
       list-style-type: none;
       display: inline-block;

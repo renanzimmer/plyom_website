@@ -23,7 +23,10 @@ $cinza-diferentao: #808080;
     top: 74px;
 
   }
-
+  .sprint-detail {
+    display: none;
+    transition: visibility 0s, opacity 0.5s linear;
+  }
   aside {
     text-transform: uppercase;
     font-size: 32px;
@@ -37,6 +40,16 @@ $cinza-diferentao: #808080;
 
   .process-container {
     padding-left: 8%;
+    .process-detail-button {
+      padding: 9px;
+      background-color: $azul;
+      height: 2vh;
+      line-height: 5;
+      text-decoration: none;
+      font-weight: bold;
+      color: white;
+      margin-left: 32%;
+    }
     ul {
       li {
         list-style-type: none;
