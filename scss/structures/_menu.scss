@@ -7,6 +7,7 @@ $cinza-intermediario: #b3b3b3;
 $lilas: #993399;
 $azul: #0066cc;
 $verde: #669900;
+$azul-item-ativo: #60bde2;
 .top-navigation {
   position: fixed;
   width: 100%;
@@ -30,6 +31,7 @@ $verde: #669900;
       line-height: $nav-height;
       margin-left: 40px;
       a {
+        text-align: center;
         &.active {
           font-weight: bold;
           &.our-cases-nav {
@@ -65,16 +67,32 @@ $verde: #669900;
     height: 74px;
   }
   .menu {
-    text-align: right;
+    padding-left: 0 !important;
     margin: 0;
     li {
       display: inline-block;
       line-height: $nav-height;
-      margin-left: 40px;
+      margin-left: 30px;
+      .vertical-separator {
+        width: 2px;
+        height: 22px;
+        background-color: $turquesa;
+        margin-bottom: -4px;
+      }
       a {
+        font-weight: bold !important;
         &.active {
-          font-weight: bold;
           color: $turquesa-claro;
+        }
+      }
+      &:nth-of-type(3) {
+        a {
+          color: $turquesa !important;
+        }
+      }
+      &:nth-of-type(4) {
+        a {
+          color: $turquesa !important;
         }
       }
     }
@@ -99,47 +117,136 @@ $verde: #669900;
       height: 74px;
     }
     &:last-of-type {
-      display: block;
+      height: 50px;
+      width: 50px;
+      top: 13px;
+      right: 17px;
       position: fixed;
-      right: 15px;
-      height: 74px;
+      display: block;
+      cursor: pointer;
+      &.selected {
+        content: url(img/processes/button_subtitle_select.svg);
+      }
     }
   }
   .menu {
     text-align: center;
     margin: 0;
+    padding-left: 0 !important;
     li {
       display: inline-block;
       line-height: $nav-height;
-      margin-left: 40px;
+      margin-left: 30px;
       .vertical-separator {
         width: 2px;
-        height: 15px;
+        height: 22px;
         background-color: $azul;
+        margin-bottom: -4px;
       }
       a {
         font-weight: bold !important;
         &.active {
-          &.our-cases-nav {
-            color: $turquesa-claro;
-          }
-          &.services-nav {
-            color: $lilas;
-          }
-          &.methods-nav {
-            color: $azul;
-          }
-          &.contact-nav {
-            color: $verde;
-          }
+          color: $azul-item-ativo;
         }
       }
       &:nth-of-type(3) {
-        margin-right: 40px;
+        a {
+          color: $azul !important;
+        }
+      }
+      &:nth-of-type(4) {
         a {
           color: $azul !important;
         }
       }
     }
   }
+}
+
+.dropbtn-port {
+
+    cursor: pointer;
+}
+
+.dropdown-port {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content-port {
+    display: none;
+    margin-top: -2px;
+    text-align: center;
+    position: absolute;
+    background-color: #f9f9f9;
+    margin-left: 18px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content-port a {
+
+    font-weight: bold;
+    font-size: 23px;
+    color: $cinza-claro;
+    text-transform: uppercase;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    background-color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content-port a:hover {color: $cinza-intermediario}
+
+.dropdown-port:hover .dropdown-content-port {
+    display: block;
+}
+
+.dropdown-port:hover .dropbtn-port {
+    color: $turquesa;
+}
+
+.dropbtn-serv {
+
+    cursor: pointer;
+}
+
+.dropdown-serv {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content-serv {
+    display: none;
+    margin-top: -2px;
+    text-align: center;
+    position: absolute;
+    background-color: #f9f9f9;
+    margin-left: 18px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content-serv a {
+
+    font-weight: bold;
+    font-size: 23px;
+    color: $cinza-claro;
+    text-transform: uppercase;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    background-color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content-serv a:hover {color: $cinza-intermediario}
+
+.dropdown-serv:hover .dropdown-content-serv {
+    display: block;
+}
+
+.dropdown-serv:hover .dropbtn-serv {
+    color: $turquesa;
 }

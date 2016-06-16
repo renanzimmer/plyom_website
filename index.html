@@ -12,7 +12,17 @@
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="stylesheet" href="application.css">
   <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+  <script src="node_modules/jquery/dist/jquery.js"></script>
+
+  <script src="node_modules/jquery-scrollify/jquery.scrollify.min.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300' rel='stylesheet' type='text/css'>
+  <script>
+    $(function() {
+      $.scrollify({
+        section : ".magnetic-scroll-section",
+      });
+    });
+  </script>
 </head>
 <body>
   <!--[if lt IE 8]>
@@ -25,9 +35,27 @@
         <div class="small-12 columns">
           <nav>
             <ul class="menu">
-              <li><a class="our-cases-nav nav-menu-item" href="#?">Portfólio</a></li>
+              <div class="dropdown-port">
+                <li><a class="our-cases-nav nav-menu-item dropbtn-port" href="#?">Portfólio</a></li>
+                <div class="dropdown-content-port">
+                  <a href="anestech.html">Anestech</a>
+                  <a href="minsulin.html">Minsulin</a>
+                  <a href="ahgora.html">Ahgora</a>
+                  <a href="youper.html">Youper</a>
+                </div>
+              </div>
               <li><a class="services-nav nav-menu-item" href="#?">Serviços</a></li>
-              <li><a class="methods-nav nav-menu-item" href="#?">Processos</a></li>
+
+              <div class="dropdown-serv">
+                <li><a class="methods-nav nav-menu-item" href="#?">Processos</a></li>
+                <div class="dropdown-content-serv">
+                  <a href="processes.html#resource">Recurso</a>
+                  <a href="processes.html#sprint">Sprint</a>
+                  <a href="processes.html#scope">Escopo</a>
+                </div>
+              </div>
+
+
               <li><a class="contact-nav nav-menu-item" href="#?">Contato</a></li>
             </ul>
           </nav>
@@ -35,301 +63,331 @@
       </div>
     </header>
 
-    <section class="no-head">
-      <img src="img/first_section/plyom_full_art_logo.svg" alt="" />
-    </section>
 
-    <section class="our-cases">
-      <ul class="cases-list">
-        <li class="case anestech-case slideInRight">
-          <article>
-            <div class="row">
-              <div class="small-5 columns">
-                <header>
-                  <h2>Nossos Cases</h2>
-                  <h3>Alguns dos nossos projetos</h3>
-                </header>
-                <aside>Anestech</aside>
+    <div class="index">
+
+        <section class="no-head magnetic-scroll-section">
+          <img src="img/first_section/plyom_full_art_logo.svg" alt=""/>
+          <div class="index-down-button">
+            <img src="img/header/flecha.svg" alt="" class="arrow-down"/>
+          </div>
+        </section>
+
+        <section class="our-cases magnetic-scroll-section">
+          <ul class="cases-list">
+            <li class="case anestech-case slideInRight">
+              <article>
+                <div class="row">
+                  <div class="small-5 columns">
+                    <header>
+                      <h2>Nossos Cases</h2>
+                      <h3>Alguns dos nossos projetos</h3>
+                    </header>
+                    <aside>Anestech</aside>
+                    <p>
+                      Participamos do desenvolvimento de uma platafo- <br>
+                      ma web e no desenvolvimento de quatro aplicativos,
+                      disponíveis para iOS, da empresa Anestech: AxCalc
+                      (calculadora para diversos procedimentos anesté- <br>
+                      sicos); AxATB (para a antibioticoprolaxia); AxTIVA (apli- <br>
+                      cativo para anestesia venosa total alvo controlada); e
+                      o AxReg, apenas disponível para tablet iOS (que faz o
+                      registro completo do procedimento anestésico).
+                    </p>
+                    <h3><b>Skills</b></h3>
+                    <ul class="skills-cases">
+                      <li>
+                        <img src="img/our_cases/icon_mobile.svg" alt=""/>
+                        <img src="img/our_cases/icon_ios.svg" alt=""/>
+                      </li>
+                      <li>
+                        <img src="img/our_cases/icon_tablet.svg" alt=""/>
+                        <img src="img/our_cases/icon_ios.svg" alt=""/>
+                      </li>
+                      <li>
+                        <img src="img/our_cases/icon_web.svg" alt=""/>
+                        <img src="img/our_cases/icon_rails.svg" alt=""/>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="small-7 columns">
+                    <img src="img/our_cases/anestech.png" alt=""/>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="case minsulin-case slideInRight">
+              <article>
+                <div class="row">
+                  <div class="small-5 columns">
+                    <header>
+                      <h2>Nossos Cases</h2>
+                      <h3>Alguns dos nossos projetos</h3>
+                    </header>
+                    <aside>Minsulin</aside>
+                    <p style="text-justify: auto;">
+                      Desenvolvemos o aplicativo Minsulin, disponível
+                      para iPhone, que possibilita o cálculo da dose de
+                      insulina a cada refeição pela técnica de contagem de
+                      carboidratos e o compartilhamento das informações
+                      de glicemia, doses de insulina aplicada e quantidade
+                      em gramas de carboidratos ingeridos com seus
+                      prossionais de saúde pelo Minsulin Cloud, em
+                      plataforma web, também desenvolvida por nós.
+                    </p>
+                    <h3><b>Skills</b></h3>
+                    <ul class="skills-cases">
+                      <li>
+                        <img src="img/our_cases/icon_mobile.svg" alt=""/>
+                        <img src="img/our_cases/icon_ios.svg" alt=""/>
+                      </li>
+                      <li>
+                        <img src="img/our_cases/icon_web.svg" alt=""/>
+                        <img src="img/our_cases/icon_rails.svg" alt=""/>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="small-7 columns">
+                    <img src="img/our_cases/minsulin.png" alt=""/>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="case ahgora-case slideInRight">
+              <article>
+                <div class="row">
+                  <div class="small-5 columns">
+                    <header>
+                      <h2>Nossos Cases</h2>
+                      <h3>Alguns dos nossos projetos</h3>
+                    </header>
+                    <aside>Ahgora</aside>
+                    <p>
+                      Atuamos diretamente no Ahgora Mobile, um aplicativo
+                      que registra o ponto através de um smartphone
+                      ou tablet. Desenvolvido nativamente para Android e
+                      iOS, ele informa a localização georeferencial do funcionário
+                      no momento do registro, facilitando o
+                      acompanhamento e garantindo a presença no local
+                      e horário marcados.
+                    </p>
+                    <h3><b>Skills</b></h3>
+                    <ul class="skills-cases">
+                      <li>
+                        <img src="img/our_cases/icon_mobile.svg" alt=""/>
+                        <img src="img/our_cases/icon_ios.svg" alt=""/>
+                      </li>
+                      <li>
+                        <img src="img/our_cases/icon_mobile.svg" alt=""/>
+                        <img src="img/our_cases/icon_android.svg" alt=""/>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="small-7 columns">
+                    <img src="img/our_cases/ahgora.png" alt=""/>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="case youper-case slideInRight">
+              <article>
+                <div class="row">
+                  <div class="small-5 columns">
+                    <header>
+                      <h2>Nossos Cases</h2>
+                      <h3>Alguns dos nossos projetos</h3>
+                    </header>
+                    <aside>Youper</aside>
+                    <p>
+                      Atuamos no desenvolvimento um aplicativo híbrido,
+                      disponível para Android e iOS, para superar timidez e
+                      a fobia social. Através de atividades autoguiadas e
+                      interativas, busca-se dar mais conança e reduzir a
+                      ansiedade dos usuários.
+                    </p>
+                    <h3><b>Skills</b></h3>
+                    <ul class="skills-cases">
+                      <li>
+                        <img src="img/our_cases/icon_mobile.svg" alt=""/>
+                        <img src="img/our_cases/icon_ionic.svg" alt=""/>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="small-7 columns">
+                    <img src="img/our_cases/youper.png" alt=""/>
+                  </div>
+                </div>
+              </article>
+            </li>
+          </ul>
+          <div class="row">
+            <div class="small-4 columns">
+              <ul class="left-list" style="list-style-type: none;">
+                <li><img src="img/our_cases/portfolio_button_knowmore.png" alt="" class="button-know-more"/></li>
+                <li><p>Saiba mais</p></li>
+              </ul>
+            </div>
+            <div class="small-4 columns">
+              <ul class="centered-list">
+                <div class="pagination">
+                  <li><a class="anestech-nav-item nav-item active" href="#?">1</a></li>
+                  <li><a class="minsulin-nav-item nav-item" href="#?">2</a></li>
+                  <li><a class="ahgora-nav-item nav-item" href="#?">3</a></li>
+                  <li><a class="youper-nav-item nav-item" href="#?">4</a></li>
+                </div>
+              </ul>
+            </div>
+            <div class="small-4 columns"></div>
+          </div>
+        </section>
+
+      <section class= "services magnetic-scroll-section">
+        <div class="row">
+          <header>
+            <h2>Quem Somos?</h2>
+            <h3>Somos uma equipe multidisciplinar experiente de designers e desenvolvedores focados em soluções digitais. Nossas soluções são completas: primam pela segurança, performance e pela interface intuitiva; com as mais avançadas tecnologias e com os melhores métodos de desenvolvimento de software, transformamos sua ideia em uma solução corporativa.</h3>
+            <aside>E o que faz cada equipe?</aside>
+          </header>
+          <ul>
+            <li>
+              <article class="">
+                <img src="img/services/icon_services_designers.png" alt=""/>
+                <h3>UX/UI Design</h3>
                 <p>
-                  Participamos do desenvolvimento de uma platafo- <br>
-                  ma web e no desenvolvimento de quatro aplicativos,
-                  disponíveis para iOS, da empresa Anestech: AxCalc
-                  (calculadora para diversos procedimentos anesté- <br>
-                  sicos); AxATB (para a antibioticoprolaxia); AxTIVA (apli- <br>
-                  cativo para anestesia venosa total alvo controlada); e
-                  o AxReg, apenas disponível para tablet iOS (que faz o
-                  registro completo do procedimento anestésico).
+                  A equipe de design planeja e concebe o layout das aplicações digitais dos nossos clientes.
+                  São as incríveis experiências proporcionadas aos usuários que movem esse time.
                 </p>
-                <h3><b>Skills</b></h3>
-                <ul class="skills">
-                  <li>
-                    <img src="img/our_cases/icon_mobile.svg" alt=""/>
-                    <img src="img/our_cases/icon_ios.svg" alt=""/>
-                  </li>
-                  <li>
-                    <img src="img/our_cases/icon_tablet.svg" alt=""/>
-                    <img src="img/our_cases/icon_ios.svg" alt=""/>
-                  </li>
-                  <li>
-                    <img src="img/our_cases/icon_web.svg" alt=""/>
-                    <img src="img/our_cases/icon_rails.svg" alt=""/>
-                  </li>
-                </ul>
-              </div>
-              <div class="small-7 columns">
-                <img src="img/our_cases/anestech.png" alt=""/>
-              </div>
-            </div>
-          </article>
-        </li>
-        <li class="case minsulin-case slideInRight">
-          <article>
-            <div class="row">
-              <div class="small-5 columns">
-                <header>
-                  <h2>Nossos Cases</h2>
-                  <h3>Alguns dos nossos projetos</h3>
-                </header>
-                <aside>Minsulin</aside>
-                <p style="text-justify: auto;">
-                  Desenvolvemos o aplicativo Minsulin, disponível
-                  para iPhone, que possibilita o cálculo da dose de
-                  insulina a cada refeição pela técnica de contagem de
-                  carboidratos e o compartilhamento das informações
-                  de glicemia, doses de insulina aplicada e quantidade
-                  em gramas de carboidratos ingeridos com seus
-                  prossionais de saúde pelo Minsulin Cloud, em
-                  plataforma web, também desenvolvida por nós.
-                </p>
-                <h3><b>Skills</b></h3>
-                <ul class="skills">
-                  <li>
-                    <img src="img/our_cases/icon_mobile.svg" alt=""/>
-                    <img src="img/our_cases/icon_ios.svg" alt=""/>
-                  </li>
-                  <li>
-                    <img src="img/our_cases/icon_web.svg" alt=""/>
-                    <img src="img/our_cases/icon_rails.svg" alt=""/>
-                  </li>
-                </ul>
-              </div>
-              <div class="small-7 columns">
-                <img src="img/our_cases/minsulin.png" alt=""/>
-              </div>
-            </div>
-          </article>
-        </li>
-        <li class="case ahgora-case slideInRight">
-          <article>
-            <div class="row">
-              <div class="small-5 columns">
-                <header>
-                  <h2>Nossos Cases</h2>
-                  <h3>Alguns dos nossos projetos</h3>
-                </header>
-                <aside>Ahgora</aside>
+              </article>
+            </li>
+            <li>
+              <article class="">
+                <img src="img/services/icon_services_developers.png" alt=""/>
+                <h3>Software Engineering</h3>
                 <p>
-                  Atuamos diretamente no Ahgora Mobile, um aplicativo
-                  que registra o ponto através de um smartphone
-                  ou tablet. Desenvolvido nativamente para Android e
-                  iOS, ele informa a localização georeferencial do funcionário
-                  no momento do registro, facilitando o
-                  acompanhamento e garantindo a presença no local
-                  e horário marcados.
+                  O time de desenvolvimento dá vida às aplicações.
+                  Os frequentes desafios tecnológicos e a obsessão pela criação de softwares
+                  de qualidade são os motores dessa equipe polivalente e versátil.
                 </p>
-                <h3><b>Skills</b></h3>
-                <ul class="skills">
-                  <li>
-                    <img src="img/our_cases/icon_mobile.svg" alt=""/>
-                    <img src="img/our_cases/icon_ios.svg" alt=""/>
-                  </li>
-                  <li>
-                    <img src="img/our_cases/icon_mobile.svg" alt=""/>
-                    <img src="img/our_cases/icon_android.svg" alt=""/>
-                  </li>
-                </ul>
-              </div>
-              <div class="small-7 columns">
-                <img src="img/our_cases/ahgora.png" alt=""/>
-              </div>
-            </div>
-          </article>
-        </li>
-        <li class="case youper-case slideInRight">
-          <article>
-            <div class="row">
-              <div class="small-5 columns">
-                <header>
-                  <h2>Nossos Cases</h2>
-                  <h3>Alguns dos nossos projetos</h3>
-                </header>
-                <aside>Youper</aside>
-                <p>
-                  Atuamos no desenvolvimento um aplicativo híbrido,
-                  disponível para Android e iOS, para superar timidez e
-                  a fobia social. Através de atividades autoguiadas e
-                  interativas, busca-se dar mais conança e reduzir a
-                  ansiedade dos usuários.
-                </p>
-                <h3><b>Skills</b></h3>
-                <ul class="skills">
-                  <li>
-                    <img src="img/our_cases/icon_mobile.svg" alt=""/>
-                    <img src="img/our_cases/icon_ionic.svg" alt=""/>
-                  </li>
-                </ul>
-              </div>
-              <div class="small-7 columns">
-                <img src="img/our_cases/youper.png" alt=""/>
-              </div>
-            </div>
-          </article>
-        </li>
-      </ul>
-      <ul class="centered-list">
-        <div class="pagination">
-          <li><a class="anestech-nav-item nav-item active" href="#?">1</a></li>
-          <li><a class="minsulin-nav-item nav-item" href="#?">2</a></li>
-          <li><a class="ahgora-nav-item nav-item" href="#?">3</a></li>
-          <li><a class="youper-nav-item nav-item" href="#?">4</a></li>
+              </article>
+            </li>
+          </ul>
+
         </div>
-      </ul>
-    </section>
+      </section>
 
-    <section class= "services">
-      <div class="row">
-        <header>
-          <h2>Quem Somos?</h2>
-          <h3>Somos uma equipe multidisciplinar experiente de designers e desenvolvedores focados em soluções digitais. Nossas soluções são completas: primam pela segurança, performance e pela interface intuitiva; com as mais avançadas tecnologias e com os melhores métodos de desenvolvimento de software, transformamos sua ideia em uma solução corporativa.</h3>
-          <aside>E o que faz cada equipe?</aside>
-        </header>
-        <ul>
-          <li>
-            <article class="">
-              <img src="img/services/icon_services_designers.png" alt=""/>
-              <h3>UX/UI Design</h3>
-              <p>
-                A equipe de design planeja e concebe o layout das aplicações digitais dos nossos clientes.
-                São as incríveis experiências proporcionadas aos usuários que movem esse time.
-              </p>
-            </article>
-          </li>
-          <li>
-            <article class="">
-              <img src="img/services/icon_services_developers.png" alt=""/>
-              <h3>Software Engineering</h3>
-              <p>
-                O time de desenvolvimento dá vida às aplicações.
-                Os frequentes desafios tecnológicos e a obsessão pela criação de softwares
-                de qualidade são os motores dessa equipe polivalente e versátil.
-              </p>
-            </article>
-          </li>
-        </ul>
-
-      </div>
-    </section>
-
-    <section class= "methods">
-      <div class="row">
-        <div class="small-11 columns">
-          <h2>Como podemos atendê-lo?</h2>
-          <h3>Escolha o processo que mais se encaixa pra você:</h3>
+      <section class= "methods magnetic-scroll-section">
+        <div class="row">
+          <div class="small-11 columns">
+            <h2>Como podemos atendê-lo?</h2>
+            <h3>Escolha o processo que mais se encaixa pra você:</h3>
+          </div>
+          <ul>
+            <li>
+              <article class="process">
+                <div class="row">
+                  <div class="small-4 columns">
+                    <img src="img/methods/icon_methods_resources.png" alt="" />
+                  </div>
+                  <div class="small-8 columns">
+                    <h2>Recurso</h2>
+                    <aside class="">
+                      Versatilidade
+                    </aside>
+                  </div>
+                </div>
+                <p>
+                  Escolha prossionais capacitados em
+                  diferentes áreas técnicas para
+                  desenvolver seu projeto e acompanhe
+                  de perto o processo, tendo total
+                  liberdade de denir as tarefas para os
+                  prossionais contratados.
+                </p>
+              </article>
+              <div class="buttons-know-more">
+                <a href="processes.html#resource"><img src="img/methods/process_button.png" alt="" class="processes-button-know-more" /></a>
+              </div>
+            </li>
+            <li>
+              <article class="process">
+                <div class="row">
+                  <div class="small-4 columns">
+                    <img src="img/methods/icon_methods_sprint.png" alt="" />
+                  </div>
+                  <div class="small-8 columns">
+                    <h2>Sprint</h2>
+                    <aside class="">
+                      Flexibilidade
+                    </aside>
+                  </div>
+                </div>
+                <p>
+                  Trabalhando com o apoio da
+                  metodologia scrum, desenvolvemos seu
+                  projeto através de ciclos semanais ou
+                  quinzenais - nomeados como sprints. O
+                  projeto é revisado a cada ciclo,
+                  adequando-se a novas demandas.
+                </p>
+              </article>
+              <div class="buttons-know-more">
+                <a href="processes.html#sprint"><img src="img/methods/process_button.png" alt="" class="processes-button-know-more"/></a>
+              </div>
+            </li>
+            <li>
+              <article class="process">
+                <div class="row">
+                  <div class="small-4 columns">
+                    <img src="img/methods/icon_methods_scope.png" alt="" />
+                  </div>
+                  <div class="small-8 columns">
+                    <h2>Escopo</h2>
+                    <aside class="">
+                      Previsibilidade
+                    </aside>
+                  </div>
+                </div>
+                <p>
+                  Juntos, elaboramos um pré-projeto -
+                  documento que apresentará todos os
+                  detalhes para seu projeto nal. O projeto
+                  será executado dentro da metodologia
+                  cascata e ao nal voce receberá o
+                  escopo planejado.
+                </p>
+              </article>
+              <div class="buttons-know-more">
+                <a href="processes.html#scope"><img src="img/methods/process_button.png" alt="" class="processes-button-know-more"/></a>
+              </div>
+            </li>
+          </ul>
         </div>
-        <ul>
-          <li>
-            <article class="process">
-              <div class="row">
-                <div class="small-4 columns">
-                  <img src="img/methods/icon_methods_resources.png" alt="" />
-                </div>
-                <div class="small-8 columns">
-                  <h2>Recurso</h2>
-                  <aside class="">
-                    Versatilidade
-                  </aside>
-                </div>
-              </div>
-              <p>
-                Escolha prossionais capacitados em
-                diferentes áreas técnicas para
-                desenvolver seu projeto e acompanhe
-                de perto o processo, tendo total
-                liberdade de denir as tarefas para os
-                prossionais contratados.
-              </p>
-            </article>
-          </li>
-          <li>
-            <article class="process">
-              <div class="row">
-                <div class="small-4 columns">
-                  <img src="img/methods/icon_methods_sprint.png" alt="" />
-                </div>
-                <div class="small-8 columns">
-                  <h2>Sprint</h2>
-                  <aside class="">
-                    Flexibilidade
-                  </aside>
-                </div>
-              </div>
-              <p>
-                Trabalhando com o apoio da
-                metodologia scrum, desenvolvemos seu
-                projeto através de ciclos semanais ou
-                quinzenais - nomeados como sprints. O
-                projeto é revisado a cada ciclo,
-                adequando-se a novas demandas.
-              </p>
-            </article>
-          </li>
-          <li>
-            <article class="process">
-              <div class="row">
-                <div class="small-4 columns">
-                  <img src="img/methods/icon_methods_scope.png" alt="" />
-                </div>
-                <div class="small-8 columns">
-                  <h2>Escopo</h2>
-                  <aside class="">
-                    Previsibilidade
-                  </aside>
-                </div>
-              </div>
-              <p>
-                Juntos, elaboramos um pré-projeto -
-                documento que apresentará todos os
-                detalhes para seu projeto nal. O projeto
-                será executado dentro da metodologia
-                cascata e ao nal voce receberá o
-                escopo planejado.
-              </p>
-            </article>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="contact">
-      <div class="row">
-        <header>
+
+      </section>
+      <section class="contact magnetic-scroll-section">
+        <div class="row">
+          <header>
             <div class="small-11 columns small-offset-1">
               <h2>Vamos conversar?</h2>
               <p>A Plyom quer ter você sempre por perto.<br>Por isso, listamos aqui nossos contatos para que<br>você fale conosco quando precisar</p>
             </div>
-        </header>
-        <dl>
-          <div class="small-9 columns small-offset-3">
-            <dt class="phone">Telefone</dt>
-            <dd class="phone-description">(48) 3028 2360</dd>
-            <dt class="email">E-mail</dt>
-            <dd class="email-description">atendimento@plyom.com.br</dd>
-            <dt class="address">Endereço</dt>
-            <dd class="address-description">SC-401, Km 4, Sala 10 | Centro de Inovação ACATE<br>Saco Grande - Florianópolis (SC) | CEP 88032-005
-            </dd>
-          </div>
-        </dl>
-      </div>
-    </section>
+          </header>
+          <dl>
+            <div class="small-9 columns small-offset-3">
+              <dt class="phone">Telefone</dt>
+              <dd class="phone-description">(48) 3028 2360</dd>
+              <dt class="email">E-mail</dt>
+              <dd class="email-description">atendimento@plyom.com.br</dd>
+              <dt class="address">Endereço</dt>
+              <dd class="address-description">SC-401, Km 4, Sala 10 | Centro de Inovação ACATE<br>Saco Grande - Florianópolis (SC) | CEP 88032-005
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+    </div>
+
   </div>
 
 
@@ -337,16 +395,16 @@
   <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
-  <script src="js/main.js"></script>
+  <script src="js/index/main.js"></script>
 
   <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-    ga('create', 'UA-44065166-1', 'auto');
-    ga('send', 'pageview');
+  ga('create', 'UA-44065166-1', 'auto');
+  ga('send', 'pageview');
 
   </script>
 </body>

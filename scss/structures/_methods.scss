@@ -4,13 +4,14 @@ $nice-blue: #0071bc;
   text-align: left;
   background-image: url(img/methods/bg_right.svg);
   background-position: right top;
-  background-size: auto 80vh;
+  background-size: auto 100vh;
   background-repeat: no-repeat;
+  padding-top: 16vh !important;
 
   @media screen and (min-width: 1200px) {
     background-image: url(img/methods/bg_left.svg), url(img/methods/bg_right.svg);
     background-position: left top, right top;
-    background-size: auto 80vh, auto 100vh;
+    background-size: auto 100vh, auto 100vh;
   }
 
   .process {
@@ -30,6 +31,17 @@ $nice-blue: #0071bc;
     }
     img {
       text-align: right;;
+    }
+  }
+  .buttons-know-more {
+    margin-top: 30px;
+    text-align: center;
+    .processes-button-know-more {
+      height: 45px;
+    }
+    .processes-button-know-more:hover {
+      content: url(img/methods/process_button_hover.png);
+      cursor: pointer;
     }
   }
 

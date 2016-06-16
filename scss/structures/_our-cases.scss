@@ -5,8 +5,9 @@ $cinza-claro: #ccc;
 $cinza-intermediario: #b3b3b3;
 .our-cases {
   background-image: url(img/our_cases/bg.svg);
-  background-size: auto 90vh;
-  height: 90vh;
+  background-size: auto 100vh;
+  height: 100vh;
+  padding-top: 15vh;
   background-position: left top;
   background-repeat: no-repeat;
   p {
@@ -70,7 +71,7 @@ $cinza-intermediario: #b3b3b3;
         display: block;
       }
     }
-    .skills {
+    .skills-cases {
       padding-left: 0px;
       li {
         display: inline;
@@ -80,4 +81,30 @@ $cinza-intermediario: #b3b3b3;
       }
     }
   }
+  .left-list {
+    text-align: left;
+    height: 47px;
+    padding-left: 25px;
+    li {
+      &:last-of-type {
+        position: relative;
+        top: -57px;
+        right: -46px;
+        bottom: -16px;
+        p {
+          font-size: 22px;
+          font-weight: bold;
+          color: $turquesa-claro;
+        }
+      }
+    }
+    .button-know-more {
+      height: 41px;
+    }
+    .button-know-more:hover {
+      content: url(img/our_cases/portfolio_button_knowmore_hover.png);
+      cursor: pointer;
+    }
+  }
+
 }
